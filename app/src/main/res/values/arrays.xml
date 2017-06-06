@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_courses">
+        <item>@string/courses</item>
+        <item>@string/android</item>
+        <item>@string/vr</item>
+        <item>@string/robotics</item>
+    </string-array>
+
+    <string-array name="array_androidDates">
+        <item>@string/andDate1</item>
+        <item>@string/andDate2</item>
+        <item>@string/andDate3</item>
+    </string-array>
+
+    <string-array name="array_vrDates">
+        <item>@string/vrDate1</item>
+        <item>@string/vrDate2</item>
+    </string-array>
+
+    <string-array name="array_roboticsDates">
+        <item>@string/robotDate1</item>
+        <item>@string/robotDate2</item>
+        <item>@string/robotDate3</item>
+    </string-array>
+
+    <string-array name="array_emptyDate">
+        <item>@string/date</item>
+    </string-array>
+</resources>

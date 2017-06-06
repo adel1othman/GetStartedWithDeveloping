@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">GetStartedWithDeveloping</string>
+
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="signUp">sign up</string>
+    <string name="date">Date</string>
+    <string name="showTable">show table</string>
+    <string name="insert_dummy_data">Insert Dummy Data</string>
+    <string name="tableActivity">Table Activity</string>
+
+    <string name="courses">Courses</string>
+    <string name="android">Android development</string>
+    <string name="vr">Develop for virtual reality</string>
+    <string name="robotics">Learn robotics</string>
+
+    <string name="andDate1">2017&#8211;08&#8211;05</string>
+    <string name="andDate2">2017&#8211;09&#8211;12</string>
+    <string name="andDate3">2017&#8211;12&#8211;11</string>
+
+    <string name="vrDate1">2017&#8211;10&#8211;09</string>
+    <string name="vrDate2">2017&#8211;11&#8211;15</string>
+
+    <string name="robotDate1">2017&#8211;07&#8211;13</string>
+    <string name="robotDate2">2017&#8211;09&#8211;12</string>
+    <string name="robotDate3">2017&#8211;10&#8211;20</string>
+</resources>
