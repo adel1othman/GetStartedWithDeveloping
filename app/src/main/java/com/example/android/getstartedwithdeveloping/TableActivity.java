@@ -36,16 +36,7 @@ public class TableActivity extends AppCompatActivity {
 
     private void displayDatabaseInfo() {
 
-        String[] projection = {
-                SignUpEntry._ID,
-                SignUpEntry.COLUMN_NAME,
-                SignUpEntry.COLUMN_SURNAME,
-                SignUpEntry.COLUMN_EMAIL,
-                SignUpEntry.COLUMN_PHONE,
-                SignUpEntry.COLUMN_COURSE,
-                SignUpEntry.COLUMN_DATE };
-
-        Cursor cursor = mDbHelper.readAllData(SignUpEntry.TABLE_NAME, projection);
+        Cursor cursor = mDbHelper.readAllData();
 
         TextView displayView = (TextView) findViewById(R.id.txtViewTable);
 

@@ -37,16 +37,27 @@ public class SignUpDbHelper extends SQLiteOpenHelper {
         db.execSQL(SQL_CREATE_REGISTER_TABLE);
     }
 
-    public Cursor readAllData(String tableName, String[] projection) {
+    public Cursor readAllData() {
 
-        return getReadableDatabase().query(
-                tableName,
+        String[] projection = {
+                SignUpEntry._ID,
+                SignUpEntry.COLUMN_NAME,
+                SignUpEntry.COLUMN_SURNAME,
+                SignUpEntry.COLUMN_EMAIL,
+                SignUpEntry.COLUMN_PHONE,
+                SignUpEntry.COLUMN_COURSE,
+                SignUpEntry.COLUMN_DATE };
+
+        Cursor cursor;
+        cursor = getReadableDatabase().query(SignUpEntry.TABLE_NAME,
                 projection,
                 null,
                 null,
                 null,
                 null,
                 null);
+
+        return cursor;
     }
 
     @Override
