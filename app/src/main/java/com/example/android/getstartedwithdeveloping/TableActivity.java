@@ -36,8 +36,6 @@ public class TableActivity extends AppCompatActivity {
 
     private void displayDatabaseInfo() {
 
-        SQLiteDatabase db = mDbHelper.getReadableDatabase();
-
         String[] projection = {
                 SignUpEntry._ID,
                 SignUpEntry.COLUMN_NAME,
@@ -47,14 +45,7 @@ public class TableActivity extends AppCompatActivity {
                 SignUpEntry.COLUMN_COURSE,
                 SignUpEntry.COLUMN_DATE };
 
-        Cursor cursor = db.query(
-                SignUpEntry.TABLE_NAME,
-                projection,
-                null,
-                null,
-                null,
-                null,
-                null);
+        Cursor cursor = mDbHelper.readAllData(SignUpEntry.TABLE_NAME, projection);
 
         TextView displayView = (TextView) findViewById(R.id.txtViewTable);
 

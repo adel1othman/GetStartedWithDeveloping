@@ -14,7 +14,6 @@ public final class SignUpContract {
 
         public final static String TABLE_NAME = "registered";
 
-        public final static String _ID = BaseColumns._ID;
         public final static String COLUMN_NAME ="name";
         public final static String COLUMN_SURNAME = "surname";
         public final static String COLUMN_EMAIL = "email";

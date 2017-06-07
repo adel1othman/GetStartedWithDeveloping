@@ -1,8 +1,10 @@
 package com.example.android.getstartedwithdeveloping.data;
 
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.net.Uri;
 
 import com.example.android.getstartedwithdeveloping.data.SignUpContract.SignUpEntry;
 
@@ -33,6 +35,18 @@ public class SignUpDbHelper extends SQLiteOpenHelper {
                 + SignUpEntry.COLUMN_DATE + " NUMERIC NOT NULL);";
 
         db.execSQL(SQL_CREATE_REGISTER_TABLE);
+    }
+
+    public Cursor readAllData(String tableName, String[] projection) {
+
+        return getReadableDatabase().query(
+                tableName,
+                projection,
+                null,
+                null,
+                null,
+                null,
+                null);
     }
 
     @Override
